@@ -1,393 +1,94 @@
-# Issues
+<div align="center">
 
-If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/ethereal-jekyll-theme) and I will be more than happy to help!
+  # Chirpy Jekyll Theme
 
-Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/ethereal-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/ethereal-jekyll-theme@incoming.gitlab.com).
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
-The GitHub repository is simply a mirror of the GitLab repository.
+  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
+  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml)
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cotes2020/jekyll-theme-chirpy&amp;utm_campaign=Badge_Grade)
+  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
+  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-# (WIP) Ethereal by HTML5 UP
+  [**Live Demo →**][demo]
 
-Ethereal by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
 
+</div>
 
-This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP.
-Since releasing Parallelism 3-4 years ago (!!!), I've been dying to do another side-scrolling
-template with more in the way of flexibility/customization potential. The result is this template,
-Ethereal, which combines a robust side-scrolling framework of my own creation (with various
-"scroll-assist" features like drag/momentum scrolling, keyboard shortcuts, etc.) with a unique
-look and feel, a lightbox gallery, tons of customization options, and, of course, full
-responsiveness. Hope you dig it :)
+## Features
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+<details>
+  <summary>
+    <i>Click to view features</i>
+  </summary>
+  <p>
 
-(* = not included)
+  - Dark / Light Theme Mode
+  - Localized UI language
+  - Pinned Posts
+  - Hierarchical Categories
+  - Trending Tags
+  - Table of Contents
+  - Last Modified Date of Posts
+  - Syntax Highlighting
+  - Mathematical Expressions
+  - Mermaid Diagram & Flowchart
+  - Dark / Light Mode Images
+  - Embed Videos
+  - Disqus / Utterances / Giscus Comments
+  - Search
+  - Atom Feeds
+  - Google Analytics
+  - SEO & Performance Optimization
 
-AJ
-aj@lkn.io | @ajlkn
+  </p>
+</details>
 
+## Documentation
 
-Instructions:
+To explore usage, development, and upgrade guide of the project, please refer to
+the [Wiki][wiki].
 
-	Overview
-	========
+## Contributing
 
-		Browsers deal with side-scrolling pages differently to vertically-oriented ones in
-		that they require elements (or at the very least, the top-most wrapper element) to
-		have a defined (fixed) width. This leads to a number of limitations (eg. the page
-		won't automatically grow/shrink in the same way a vertically-oriented one will), so
-		Ethereal does two things to work around this:
+Welcome to report bugs, help improve the code or submit new features.
+For more information, please see the ["Contributing Guidelines"][contribute-guide].
 
-		- The entire page is made up of "panel" elements, each of which can be assigned an
-		  optional "size" modifier (satisfying the fixed width requirement).
+## Credits
 
-		- For panels that don't use a size modifier, individual containing elements *inside*
-		  them (eg. a column) can be assigned a "span" modifier to give those a fixed width
-		  instead (also satisfying the fixed width requirement).
+This theme is mainly built with [Jekyll][jekyllrb] ecosystem,
+[Bootstrap][bootstrap], [Font Awesome][icons] and some other [wonderful tools][lib].
+The avatar and favicon design come from [Clipart Max][image].
 
-		Another fun quirk of side-scrolling pages is how to actually implement horizontal
-		scrolling *without* resorting to using the (usually ugly) horizontal scrollbar.
-		Ethereal does this in FOUR (!) ways:
+Thanks to all the [contributors][contributors]. Also, folks who submitted issues
+or unmerged PRs should not be forgotten. Because they reported bugs, shared ideas,
+or inspired me to write more readable documentation.
 
-		- Dragging: Users can simply click and drag the page left or right to scroll it around.
-		  This works exactly as you'd expect, and even has a nice "post-scroll momentum" effect.
+Last but not least, thanks to [JetBrains][jetbrains] for providing the
+_Open Source Development_ license.
 
-		- Scroll Wheel: Ethereal modifies* the scroll wheel's behavior to translate vertical
-		  scrolling into horizontal scrolling, allowing the user to use either the scroll wheel
-		  or trackpad to scroll the page (the latter of which retains the ability to horziontally
-		  scroll as normal, so nothing changes there).
+## Sponsoring
 
-		  * Special thanks to @miorel + @pieterv of Facebook for "normalizeWheel()" :)
+If you'd like to sponsor this project, the following options are available.
 
-		- Scroll Zones: Users can hover the mouse cursor on the left or right edges of the page
-		  to automatically scroll in either direction.
+[![Ko-fi](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/coteschung)
+[![Wechat Pay](https://img.shields.io/badge/-Tip%20Me%20on%20WeChat-brightgreen?logo=wechat&logoColor=white)][donation]
+[![Alipay](https://img.shields.io/badge/-Tip%20Me%20on%20Alipay-blue?logo=alipay&logoColor=white)][donation]
 
-		- Keyboard Shortcuts: Finally, users can simply use the left/right arrows, page up/down,
-		  home/end, and the spacebar to scroll the page.
+## License
 
-		Note that any (or all) of these scroll-assist features can be turned off (and in some
-		cases customized). See the top of assets/js/main.js for more information.
+This work is published under [MIT][mit] License.
 
-
-	Span Modifiers
-	==============
-
-		Span modifiers are simply classes that give elements a fixed width, the size of which
-		is determined by the "unit value" associated with the modifier (eg. "span-3" means
-		"span 3 units"). These sizes are in "rem" units when used inside panels that don't
-		use a size modifier, and in percentage units when used inside panels that do.
-
-		Ethereal includes span modifiers ranging from 0.25 units ("span-0-25") to 10 units
-		("span-10"). Here's a partial list:
-
-		span-0-25     Span 0.25 units.
-		span-0-5      Span 0.5 units.
-		span-0-75     Span 0.75 units.
-		span-1        Span 1 unit.
-		span-1-25     Span 1.25 units.
-		span-1-5      Span 1.5 units.
-		span-1-75     Span 1.75 units.
-		...
-		span-9        Span 9 units.
-		span-9-25     Span 9.25 units.
-		span-9-5      Span 9.5 units.
-		span-9-75     Span 9.75 units.
-		span-10       Span 10 units.
-
-
-	Major Elements
-	==============
-
-		Most of Ethereal's elements are pretty much what you'd expect, but there are a handful
-		of "major" ones that warrant a bit more explanation:
-
-
-		Panel
-		------
-
-			The primary building block of Ethereal.
-
-			HTML
-
-				<section class="panel (size modifier) (color modifier)">
-					<div class="intro (color modifier)">
-						(intro content)
-					</div>
-					<div class="inner (inner modifiers) (color modifier)">
-						(inner content)
-					</div>
-				</section>
-
-				Note: The entire "intro" child element can be excluded.
-				Note: You can have as many "intro" and "inner" child elements as you like.
-
-			Modifiers
-
-				Size
-
-					small          Use small size.
-					medium         Use medium size.
-					large          Use large size.
-
-				Color
-
-					color0         Use background color 0 (gradient).
-					color1         Use background color 1.
-					color2         Use background color 2.
-					color3         Use background color 3.
-					color4         Use background color 4.
-					color1-alt     Use background color 1 (alt).
-					color2-alt     Use background color 2 (alt).
-					color3-alt     Use background color 3 (alt).
-					color4-alt     Use background color 4 (alt).
-
-				Inner
-
-					columns        Divides child elements into columns.
-					aligned        When used with "columns", aligns content to top of panel.
-					divided        When used with "columns", separates each column with a vertical line.
-
-			Examples
-
-				Here's a very basic example:
-
-					<section class="panel medium color0">
-						<div class="intro">
-							<h2 class="major">Panel</h2>
-							<p>Just a generic panel.</p>
-						</div>
-						<div class="inner">
-							<p>Lorem ipsum dolor sit amet.</p>
-						</div>
-					</section>
-
-				And here's a more advanced example using columns and *no* size modifier:
-
-					<section class="panel color2">
-						<div class="intro">
-							<h2 class="major">Panel</h2>
-							<p>Just a generic panel.</p>
-						</div>
-						<div class="inner columns">
-							<div class="span-4">
-								<p>This column is 4 units wide.</p>
-							</div>
-							<div class="span-3">
-								<p>This column is 3 units wide.</p>
-							</div>
-							<div class="span-2">
-								<p>This column is 2 units wide.</p>
-							</div>
-						</div>
-					</section>
-
-				Note: The "intro" child element already has a fixed width, so a span modifier
-				isn't required.
-
-
-		Panel (Banner)
-		--------------
-
-			The "Banner" variant of a regular panel.
-
-			HTML
-
-				<section class="panel banner (size modifier) (color modifier) (orientation modifier)">
-					<div class="content (color modifier)">
-						(content)
-					</div>
-					<div class="image (image modifiers)" data-position="(image position modifier)">
-						<img src="(image URL)" alt="" />
-					</div>
-				</section>
-
-			Modifiers
-
-				Orientation
-
-					left           Content on the left, image on the right.
-					right          Content on the right, image on the left.
-
-				Image
-
-					filtered       Applies a gradient filter to the image.
-					tinted         Applies a tint filter to the image.
-
-				Image Position (required)
-
-					top left       Position image in the top-left corner.
-					top            Position image along the top edge.
-					top right      Position image in the top-right corner.
-					right          Position image along the right edge.
-					bottom right   Position image in the bottom-right corner.
-					bottom         Position image along the bottom edge.
-					bottom left    Position image in the bottom-left corner.
-					left           Position image along the left edge.
-					center         Position image in the center.
-
-			Example
-
-				<section class="panel banner medium right">
-					<div class="content color0">
-						<h1>Banner</h1>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
-					<div class="image" data-position="center">
-						<img src="/path/to/image.jpg" alt="" />
-					</div>
-				</section>
-
-
-		Panel (Spotlight)
-		-----------------
-
-			The "Spotlight" variant of a regular panel.
-
-			HTML
-
-				<section class="panel spotlight (size modifier) (orientation modifier)">
-					<div class="content (span modifier)">
-						(content)
-					</div>
-					<div class="image (image modifiers)" data-position="(image position modifier)">
-						<img src="(image URL)" alt="" />
-					</div>
-				</section>
-
-			Modifiers
-
-				Orientation
-
-					left           Content on the left.
-					right          Content on the right.
-
-				Image
-
-					filtered       Applies a gradient filter to the image.
-					tinted         Applies a tint filter to the image.
-
-				Image Position (required)
-
-					top left       Position image in the top-left corner.
-					top            Position image along the top edge.
-					top right      Position image in the top-right corner.
-					right          Position image along the right edge.
-					bottom right   Position image in the bottom-right corner.
-					bottom         Position image along the bottom edge.
-					bottom left    Position image in the bottom-left corner.
-					left           Position image along the left edge.
-					center         Position image in the center.
-
-			Example
-
-				<section class="panel spotlight large right">
-					<div class="content">
-						<h1>Spotlight</h1>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
-					<div class="image" data-position="center">
-						<img src="/path/to/image.jpg" alt="" />
-					</div>
-				</section>
-
-
-		Gallery
-		-------
-
-			A lightbox-enabled gallery.
-
-			HTML
-
-				<div class="gallery">
-					<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-						<img src="(thumbnail image URL)" alt="" />
-					</a>
-					<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-						<img src="(thumbnail image URL)" alt="" />
-					</a>
-					<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-						<img src="(thumbnail image URL)" alt="" />
-					</a>
-					<div class="group (span modifier)">
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						...
-					</div>
-					...
-				</div>
-
-				Note: The "group" element creates a dual-row group of images. Images inside this group will
-				automatically wrap to the next row when they exceed its width (as defined by its span modifier).
-				You can have as many groups in a gallery as you like.
-
-			Modifiers
-
-				Image
-
-					filtered       Applies a gradient filter to the image.
-					tinted         Applies a tint filter to the image.
-
-				Image Position (required)
-
-					top left       Position image in the top-left corner.
-					top            Position image along the top edge.
-					top right      Position image in the top-right corner.
-					right          Position image along the right edge.
-					bottom right   Position image in the bottom-right corner.
-					bottom         Position image along the bottom edge.
-					bottom left    Position image in the bottom-left corner.
-					left           Position image along the left edge.
-					center         Position image in the center.
-
-			Example
-
-				<div class="gallery">
-					<a href="/assets/images/thumbnails/01.jpg" class="image filtered span-2" data-position="center">
-						<img src="/assets/images/fulls/01.jpg" alt="" />
-					</a>
-					<a href="/assets/images/thumbnails/02.jpg" class="image filtered span-4" data-position="center">
-						<img src="/assets/images/fulls/02.jpg" alt="" />
-					</a>
-					<div class="group span-4">
-						<a href="/assets/images/thumbnails/03.jpg" class="image filtered span-2" data-position="center">
-							<img src="/assets/images/fulls/03.jpg" alt="" />
-						</a>
-						<a href="/assets/images/thumbnails/04.jpg" class="image filtered span-2" data-position="center">
-							<img src="/assets/images/fulls/04.jpg" alt="" />
-						</a>
-						<a href="/assets/images/thumbnails/05.jpg" class="image filtered span-2" data-position="center">
-							<img src="/assets/images/fulls/05.jpg" alt="" />
-						</a>
-						<a href="/assets/images/thumbnails/06.jpg" class="image filtered span-2" data-position="center">
-							<img src="/assets/images/fulls/06.jpg" alt="" />
-						</a>
-					</div>
-				</div>
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other:
-		jQuery (jquery.com)
-		Misc. Sass functions (@HugoGiraudel)
-		normalizeWheel (@miorel + @pieterv of Facebook)
-		Skel (skel.io)
+[jekyllrb]: https://jekyllrb.com/
+[bootstrap]: https://getbootstrap.com/
+[icons]: https://fontawesome.com/
+[image]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
+[demo]: https://cotes2020.github.io/chirpy-demo/
+[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
+[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/.github/CONTRIBUTING.md
+[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
+[lib]: https://github.com/cotes2020/chirpy-static-assets
+[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+[donation]: https://sponsor.cotes.page/
+[mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
